@@ -1,19 +1,18 @@
-package ru.itis
+package ru.itis.accepted
 
 import java.math.BigInteger
 
 fun main() {
-    fibonacci()
+    fibonacci(500)
 }
 
 /*
 * a 1 1 2 3 5
 * b 1 2 3 5 8
 * */
-fun fibonacci() {
+fun fibonacci(positionToFind: Int) {
     var a = BigInteger.ONE
     var b = BigInteger.ONE
-    val positionToFind = 500
     for (x in 3..positionToFind) {
         b += a
         a = b - a

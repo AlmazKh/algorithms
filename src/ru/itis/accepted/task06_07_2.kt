@@ -1,10 +1,10 @@
-package ru.itis
+package ru.itis.accepted
 
 import java.util.*
 
 fun main() {
-    val k = 20 // шары
-    val n = 1000 // этажи
+    val k = 3 // шары
+    val n = 25 // этажи
     val dropAttemptCount = computeMinBallsDropCount(k, n)
     val x = dropAttemptCount[k][n]
     println(x)
@@ -62,7 +62,7 @@ private fun printInstructions(k: Int, n: Int, totalAttemptNeedCount: Int, dropAt
 }
 
 private fun printDropFrom(floor: Int, attempt: Int) {
-    println("$attempt. Кидаем мяч с $floor этажа")
+    println("$attempt попытка. Кидаем мяч с $floor этажа")
 }
 
 private fun computeMinBallsDropCount(k: Int, n: Int): Array<IntArray> {

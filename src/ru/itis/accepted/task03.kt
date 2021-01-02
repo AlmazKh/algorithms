@@ -1,4 +1,4 @@
-package ru.itis
+package ru.itis.accepted
 
 import java.io.*
 
@@ -10,7 +10,6 @@ object Vaccine {
     var reader: BufferedReader? = null
     var writer: BufferedWriter? = null
 
-    @Throws(IOException::class)
     @JvmStatic
     fun main(args: Array<String>) {
         val a = processInputLine(reader!!.readLine())
